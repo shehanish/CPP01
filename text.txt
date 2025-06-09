@@ -1,0 +1,20 @@
+
+- Every new must matched with a delete
+	-if you use new[] use delete[]
+
+Zombie.hpp        → Class declaration
+Zombie.cpp        → Class method definitions (constructor, destructor, announce)
+newZombie.cpp     → Function: creates zombie on heap
+randomChump.cpp   → Function: creates zombie on stack
+main.cpp          → Calls both functions and shows the difference
+
+| Feature          | **Stack**                   | **Heap**                    |
+| ---------------- | --------------------------- | --------------------------- |
+| **Allocation**   | Automatic                   | Manual (`new`, `delete`)    |
+| **Deallocation** | Automatic (when scope ends) | Manual (you must `delete`)  |
+| **Speed**        | Very fast                   | Slower                      |
+| **Memory size**  | Limited                     | Much larger                 |
+| **Lifetime**     | Tied to scope               | Controlled by programmer    |
+| **Syntax**       | `Zombie z;`                 | `Zombie* z = new Zombie();` |
+| **Destruction**  | Happens automatically       | You must call `delete z;`   |
+
