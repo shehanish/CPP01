@@ -3,9 +3,9 @@ C++ = c++
 
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 
-NAME = zombie
+NAME = brain
 
-SRC = main.cpp zombie.cpp newZombie.cpp randomChump.cpp
+SRC = main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

@@ -1,25 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: shkaruna <shkaruna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/09 19:27:53 by shkaruna          #+#    #+#             */
-/*   Updated: 2025/06/10 17:39:02 by shkaruna         ###   ########.fr       */
+/*   Created: 2025/06/10 17:57:01 by shkaruna          #+#    #+#             */
+/*   Updated: 2025/06/10 19:42:45 by shkaruna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "zombie.hpp"
 
-int main()
+Zombie* zombieHorde( int N, std::string name )
 {
-	Zombie* heap_zombie	= newZombie("Foo");
-	heap_zombie->announce();
+	if(N <= 0)
+	{
+		std::cout << "Error: number of Zombies should be positive!" << std::endl;
+		return(NULL);
+	}
+	 // Allocate N Zombie objects in a single block of memory
+  // This implicitly calls the default constructor for each Zombie object
+  //DECLARE horde AS POINT	
+	Zombie* horde = new Zombie[N];
 
-	randomChump("stack_zombie");
-	
-	delete(heap_zombie);
-	return(0);
-	
+	for(int i = 0; i < N; ++i)
+	{
+		horde[i].setName(name);
+	}
+	return(horde);
 }

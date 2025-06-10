@@ -1,11 +1,11 @@
 
 C++ = c++
 
-CFLAGS = -Wall -Werror -Wextra -std=c++98
+C++FLAGS = -Wall -Werror -Wextra -std=c++98
 
-NAME = zombie
+NAME = zombie_horde
 
-SRC = main.cpp zombie.cpp newZombie.cpp randomChump.cpp
+SRC = main.cpp zombie.cpp zombieHorde.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
