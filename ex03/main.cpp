@@ -6,9 +6,13 @@
 /*   By: shkaruna <shkaruna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/10 21:14:38 by shkaruna          #+#    #+#             */
-/*   Updated: 2025/06/10 21:28:21 by shkaruna         ###   ########.fr       */
+/*   Updated: 2025/06/12 11:54:57 by shkaruna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "Weapon.hpp"
+#include "HumanA.hpp"
+#include "HumanB.hpp"
 
 int main()
 {

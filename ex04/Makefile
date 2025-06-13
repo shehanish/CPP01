@@ -2,9 +2,9 @@ C++ = c++
 
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 
-NAME = attack
+NAME = sed
 
-SRC = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp 
+SRC = main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

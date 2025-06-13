@@ -1,0 +1,27 @@
+
+-sed - replace words or patterns in a file with another word and save into a new file
+
+| Concept                | Description                                                                           |
+| ---------------------- | ------------------------------------------------------------------------------------- |
+| File I/O in C++        | Reading from and writing to files using streams (`ifstream`, `ofstream`)              |
+| String manipulation    | Searching for substrings and replacing them manually (without `std::string::replace`) |
+| Command-line arguments | Using `argc` and `argv` in `main()`                                                   |
+| Error handling         | Checking if files open correctly, if inputs are valid                                 |
+| Basic C++ classes      | You may use a small class or keep it all in `main()`                                  |
+
+ifstrem
+ofstream
+
+String manipulation: Searching for substring and replacing them manually 
+(but without std::string::replace)
+
+use command line arguments
+	int main(int argc, char **argv);
+
+argv[1]: filename
+
+argv[2]: string to replace (s1)
+
+argv[3]: replacement string (s2)
+
+*****./sed file.txt apple banana

@@ -1,0 +1,4 @@
+
+- HumanA class - attack()
+		<name> attack with their <wepon type>
+
